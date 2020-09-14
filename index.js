@@ -41,6 +41,9 @@ class Airplane {
 */
 
 class Person {
+  constructor (name, age) {
+
+  }
 
 }
 
@@ -59,6 +62,13 @@ class Person {
 */
 
 class Car {
+  constructor(model, milesPerGallon) {
+    this.model = model;
+    this.milesPerGallon = milesPerGallon
+    let tank = 0;
+    let odometer = 0;
+
+  }
 
 }
 
@@ -75,9 +85,20 @@ class Car {
         + {name} and {location} of course come from the instance's own properties.
 */
 class Lambdasian {
+  constructor(infor) {
+    this.name = info.name;
+    this.age = info.age;
+    this.location = info.location;
+    }
+    speak (){
+      return 'Hello my name is ${this.name}, I am from ${this.location}'
+    }
+  }
 
 }
+ const lam = new Lambdasian({name:"Rhonda". age 42. location: "St. Louis"});
 
+ console.log(lam.speak)
 /*
   TASK 4
     - Write an Instructor class extending Lambdasian.
